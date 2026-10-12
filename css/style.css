@@ -1,0 +1,158 @@
+/* MARK: Tipografias 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Kripa:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* MARK: Variables 
+*/
+
+:root {
+
+  /* MARK: Colores 
+  */
+  --dorado: #cc9900;
+  --guinda: #800008 ;
+  --nigga: #333;
+
+  /* MARK: Tipografia 
+  */
+  --tipografia-1: "Montserrat", sans-serif;
+  --tipografia-2: "Kripa", sans-serif;
+
+  --grueso: 900;
+  --regular: 600;
+  --tiny: 100;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 16px;
+  font-family: var(--tipografia-1);
+  font-weight: var(--regular);
+  color: var(--nigga);
+  line-height: 1.2;
+}
+
+.centrar {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ancho {
+  max-width: 1200px;
+  margin: auto;
+  border: 5px red solid;
+}
+
+.margen {
+  padding: 15px;
+}
+
+.elementos {
+  border: 2px solid #999;
+  width: 230px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #ececec;
+}
+
+.contenedor_padre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contenedor_caracteristicas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 600px;
+  border: 2px solid black;
+}
+
+.contenedor_info {
+  border: 2px solid black;
+  max-width: 400px;
+}
+
+.rojo {
+  color: red;
+}
+
+.btn_negro {
+  display: inline-block;
+  padding: 10px 30px;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--dorado);
+  font-family: var(--tipografia-2);
+  font-weight: var(--grueso);
+}
+
+.flecha-derecha {
+  color: var(--dorado);
+  /* font-size: 30px; */
+  padding-left: 10px;
+}
+
+
+/* MARK: Desktop 
+*/
+@media (max-width: 1060px) {
+  .contenedor_padre {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+  }
+   
+  .contenedor_info {
+    max-width: 100%;
+  }
+
+  .contenedor_caracteristicas {
+    max-width: 100%;
+    gap: 50px;
+  }
+}
+
+/* MARK: Tablet 
+*/
+@media (max-width: 680px) {
+  .contenedor_caracteristicas {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .elementos {
+    width: 100%;
+    padding: 30px;
+  }
+
+}
+
+
+/* MARK: Movil 
+*/
+
+@media (max-width: 480px) {
+}
+
